@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
@@ -9,3 +9,4 @@ function App() {
 }
 
 export default App;
+
