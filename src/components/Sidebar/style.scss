@@ -1,0 +1,71 @@
+@import '../../index.scss';
+
+.sidebar {
+  width: 229px;
+  height: 100vh;
+  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  background: $bg-sidebar;
+  background-blend-mode: normal;
+
+  color: $text-light;
+}
+
+.sidebar__upper {
+  width: 100%;
+  height: 70%;
+  
+  display: flex;
+  flex-direction: column;
+  
+  border: 1px solid blue;
+}
+
+.sidebar__upper-logo {
+  padding: 30px 55px;
+  text-align: center;
+}
+
+.sidebar__upper-logo-image {
+  height: 30px;
+}
+
+.sidebar__text {
+  border: 1px solid red;
+}
+
+.sidebar__text-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar__footer {
+  width: 85%;
+  padding: 10px 0;
+  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7px;
+
+  border-top: 1px solid $sidebar-footer-border;
+}
+
+.sidebar__footer-account {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: $text-dark;
+
+  border-radius: 50%;
+  background-color: $bg-light-secondary;
+}
