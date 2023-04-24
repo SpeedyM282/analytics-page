@@ -1,0 +1,47 @@
+@import '../../index.scss';
+
+.input__block {
+  height: 35px;
+
+  display: flex;
+  align-items: center;
+}
+
+.input__block-input {
+  width: 300px;
+  height: 100%;
+  
+  font-family: 'MyriadPro-Regular', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  border-radius: 5px;
+  border: 1px solid $inputs-border;
+}
+
+.input__block-input:focus {
+  outline: none;
+  box-shadow: $box-shadow-default;
+}
+
+.triangleicon__block {
+  width: 33px;
+  height: 96%;
+  
+  position: relative;
+  right: 33.1px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border: none;
+  border-radius: 0 5px 5px 0;
+
+  background-color: $bg-light-secondary;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+}
