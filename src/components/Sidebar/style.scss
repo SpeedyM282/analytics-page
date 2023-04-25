@@ -21,8 +21,6 @@
   
   display: flex;
   flex-direction: column;
-  
-  border: 1px solid blue;
 }
 
 .sidebar__upper-logo {
@@ -32,10 +30,6 @@
 
 .sidebar__upper-logo-image {
   height: 30px;
-}
-
-.sidebar__text {
-  border: 1px solid red;
 }
 
 .sidebar__text-items {
@@ -52,6 +46,10 @@
   align-items: center;
   justify-content: flex-start;
   gap: 7px;
+
+  font-family: "MyriadPro-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 
   border-top: 1px solid $sidebar-footer-border;
 }

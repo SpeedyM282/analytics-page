@@ -1,0 +1,20 @@
+@import '../../index.scss';
+
+.menulink__link {
+  padding: 7px 15px 7px 25px;
+  display: flex;
+  justify-content: space-between;
+
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: 400;
+  color: $text-light;
+}
+
+.menulink__link-title {
+  cursor: pointer;
+}
+
+.menulink__link-title-arrow {
+  cursor: pointer;
+}

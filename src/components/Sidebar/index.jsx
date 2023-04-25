@@ -1,8 +1,9 @@
 import React from "react";
+import Menu from "../Menu";
 import logo from '../../assets/logo.png';
 import './style.scss';
 
-const Sidebar = () => {
+const Sidebar = ({user}) => {
   return (
     <div className="sidebar" >
       <div className="sidebar__upper">
@@ -11,20 +12,13 @@ const Sidebar = () => {
         </div>
         
         <div className="sidebar__text">
-          <ul className="sidebar__text-items">
-            <li>HELLO</li>
-            <li>WORLD</li>
-            <li>GOODBYE</li>
-            <li>WORLD</li>
-            <li>LOREM</li>
-            <li>IPSUM</li>
-          </ul>
+          <Menu />
         </div>
       </div>
 
       
       <div className="sidebar__footer">
-        <span className="sidebar__footer-account">D</span>DENIS POTEMKIN
+        <span className="sidebar__footer-account">{user[0]}</span>{user}
       </div>
     </div>
   )

@@ -10,7 +10,7 @@ const App = () => {
       {/* <Button/> */}
       {/* <Input withLink={true} />
       <Input withLink={false} /> */}
-      <Sidebar />
+      <Sidebar user='Денис Потемкин' />
     </div>
   );
 }
