@@ -1,28 +1,44 @@
 export const MENU_LINKS_TEXT = [
   {
-    title: 'Логистика'
+    id: 1,
+    title: 'Логистика',
+    order: 1
   },
   {
+    id: 2,
     title: 'Перевозчики',
-    subtitles: ['Алексей', 'Илья', 'Иван']
+    subtitles: ['Алексей', 'Илья', 'Иван'],
+    order: 2
   },
   {
-    title: 'Задачи'
+    id: 3,
+    title: 'Задачи',
+    order: 3
   },
   {
+    id: 4,
     title: 'Аналитика',
-    subtitles: ['Справочник', 'База', 'Ваза']
+    subtitles: ['Справочник', 'База', 'Ваза'],
+    order: 4
   },
   {
-    title: 'Адреса'
+    id: 5,
+    title: 'Адреса',
+    order: 5
   },
   {
-    title: 'Товары'
+    id: 6,
+    title: 'Товары',
+    order: 6
   },
   {
-    title: 'Информация для склада'
+    id: 7,
+    title: 'Информация для склада',
+    order: 7
   },
   {
-    title: 'Адреса'
+    id: 8,
+    title: 'Адреса',
+    order: 8
   },
 ]

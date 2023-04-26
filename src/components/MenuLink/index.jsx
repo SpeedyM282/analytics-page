@@ -6,10 +6,14 @@ import downArrow from './down-arrow.svg';
 import { updateIdAction } from "../../store/reducer";
 import './style.scss';
 
-const MenuLink = ({links, id}) => {
+const MenuLink = ({linkData, onDragEnd, onDragOver, onDragStart, onDrop}) => {
   const dispatch = useDispatch();
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  
   const [options, setOptions] = useState([]);
+  const [draggable, setDraggable] = useState(false)
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+
   const linkId = useSelector(state => state.id);
 
   const linkStyle = {
@@ -18,7 +22,7 @@ const MenuLink = ({links, id}) => {
   }
   
   const handleLinkClick = () => {
-    dispatch(updateIdAction(id));
+    dispatch(updateIdAction(linkData.id));
   }
   
   const handleArrowClick = () => {
@@ -26,31 +30,53 @@ const MenuLink = ({links, id}) => {
   }
   
   useEffect(() => {
-    if(links.subtitles) {
-      setOptions(links.subtitles.map(e => <p key={e} className="menulink__subtitles-option pointer" >{e}</p>))
+    if(linkData.subtitles) {
+      setOptions(linkData.subtitles.map(e => <p key={e} className="menulink__subtitles-option pointer" >{e}</p>))
     }
     // eslint-disable-next-line
   }, []);
 
   return (
-    <div className="menulink" >
-      <div style={linkId === id ? linkStyle : {}} className="menulink__link" >
+    <div 
+      className="menulink" 
+      draggable={draggable}
+      onDragEnd={e => onDragEnd(e)}
+      onDragLeave={e => onDragEnd(e)}
+      onDragOver={e => onDragOver(e)}
+      onDrop={e => onDrop(e, linkData)}
+      onDragStart={e => onDragStart(e, linkData)}
+    >
+      <div style={linkId === linkData.id ? linkStyle : {}} className="menulink__link" >
         <div className="menulink__link-titleAndBurger">
-          <img src={burger} className="menulink__link-titleAndBurger-burger pointer" alt="Not Found" />
-          <p onClick={handleLinkClick} className="menulink__link-titleAndBurger-title pointer" >{links.title}</p>
+          <img 
+            src={burger} 
+            alt="Not Found" 
+            onMouseUp={() => setDraggable(false)}
+            onMouseDown={() => setDraggable(true)}
+            className="menulink__link-titleAndBurger-burger pointer" 
+          />
+          
+          <p 
+            onClick={handleLinkClick} 
+            className="menulink__link-titleAndBurger-title pointer" 
+          >
+            {linkData.title}
+          </p>
         </div>
         {
-          links.subtitles &&
-          <img className="menulink__link-title-arrow pointer" onClick={handleArrowClick} src={dropdownOpen ? upArrow : downArrow} alt="Not Found" />
+          linkData.subtitles &&
+          <img 
+            alt="Not Found" 
+            onClick={handleArrowClick} 
+            src={dropdownOpen ? upArrow : downArrow} 
+            className="menulink__link-title-arrow pointer" 
+          />
         }
       </div>
-
-      {
-        (links.subtitles && dropdownOpen) &&
-        <div className="menulink__subtitles" >
-          {options}
-        </div>
-      }
+      
+      <div style={{display: (linkData.subtitles && dropdownOpen) ? 'flex' : 'none'}} className="menulink__subtitles" >
+        {options}
+      </div>
     </div>
   )
 }

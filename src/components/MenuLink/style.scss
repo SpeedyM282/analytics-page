@@ -5,6 +5,13 @@
 
   display: flex;
   justify-content: space-between;
+
+  background-color: none;
+  border: 1px solid transparent;
+}
+
+.menulink__link:hover {
+  background-color: $bg-sidebar-text-hover !important;
 }
 
 .menulink__link-titleAndBurger {
@@ -17,8 +24,12 @@
   visibility: hidden;
 }
 
-.menulink__link-titleAndBurger:hover > .menulink__link-titleAndBurger-burger {
+.menulink__link:hover .menulink__link-titleAndBurger-burger {
   visibility: visible;
+}
+
+.menulink__link-titleAndBurger-title {
+  background-color: transparent;
 }
 
 .menulink__subtitles {
