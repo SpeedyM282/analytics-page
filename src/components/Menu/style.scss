@@ -1,0 +1,11 @@
+@import '../../index.scss';
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: 400;
+  color: $text-light;
+}

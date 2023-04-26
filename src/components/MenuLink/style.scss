@@ -2,19 +2,24 @@
 
 .menulink__link {
   padding: 7px 15px 7px 25px;
+
   display: flex;
   justify-content: space-between;
-
-  font-family: Verdana;
-  font-size: 14px;
-  font-weight: 400;
-  color: $text-light;
 }
 
-.menulink__link-title {
-  cursor: pointer;
+.menulink__subtitles {
+  padding: 14px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background-color: $bg-sidebar-dropdown;
+  color: $text-info-emphasis;
 }
 
-.menulink__link-title-arrow {
+.menulink__subtitles-option {
+  width: fit-content;
+}
+
+.pointer {
   cursor: pointer;
 }
