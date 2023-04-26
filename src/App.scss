@@ -1,6 +1,7 @@
-.App {
-  // padding: 50px;
+.app {
   display: flex;
-  flex-direction: column;
-  gap: 30px;
+}
+
+.app__main {
+  width: 100%;
 }
