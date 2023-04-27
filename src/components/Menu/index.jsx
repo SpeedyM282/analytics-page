@@ -9,7 +9,8 @@ const Menu = () => {
   const [currentLink, setCurrentLink] = useState(null);
 
   const dragStartHandler = (e, link) => {
-    setCurrentLink(link)
+    // e.preventDefault();
+    setCurrentLink(link);
   }
 
   const dragEndHandler = (e) => {
@@ -23,7 +24,9 @@ const Menu = () => {
 
   const dropHandler = (event, link) => {
     event.preventDefault();
+
     event.target.style.background = 'transparent';
+
     setLinks(links.map(e => {
       if(e.id === link.id) {
         return {...e, order: currentLink.order}
@@ -34,7 +37,6 @@ const Menu = () => {
       }
       return e;
     }));
-    console.log(links)
   }
 
   const sortLinks = (a, b) => {

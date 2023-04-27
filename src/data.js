@@ -42,3 +42,8 @@ export const MENU_LINKS_TEXT = [
     order: 8
   },
 ]
+
+export const NAVBAR_DATA = {
+  heading: 'Проведение ТО и мелкий ремонт',
+  items: ['Общее', 'Товар списания', 'Доп. расходы']
+}

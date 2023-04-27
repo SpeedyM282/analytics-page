@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from 'react-redux';
-import burger from './burger.svg';
-import upArrow from './up-arrow.svg';
-import downArrow from './down-arrow.svg';
+import burger from '../../assets/icons/burger.svg';
+import upArrow from '../../assets/icons/up-arrow.svg';
+import downArrow from '../../assets/icons/down-arrow.svg';
 import { updateIdAction } from "../../store/reducer";
 import './style.scss';
 
@@ -12,7 +12,6 @@ const MenuLink = ({linkData, onDragEnd, onDragOver, onDragStart, onDrop}) => {
   const [options, setOptions] = useState([]);
   const [draggable, setDraggable] = useState(false)
   const [dropdownOpen, setDropdownOpen] = useState(false);
-
 
   const linkId = useSelector(state => state.id);
 
@@ -50,9 +49,9 @@ const MenuLink = ({linkData, onDragEnd, onDragOver, onDragStart, onDrop}) => {
         <div className="menulink__link-titleAndBurger">
           <img 
             src={burger} 
-            alt="Not Found" 
-            onMouseUp={() => setDraggable(false)}
-            onMouseDown={() => setDraggable(true)}
+            alt="Not Found"
+            onMouseUp={() => setDraggable(true)}
+            onMouseDown={() => setDraggable(false)}
             className="menulink__link-titleAndBurger-burger pointer" 
           />
           
@@ -74,7 +73,10 @@ const MenuLink = ({linkData, onDragEnd, onDragOver, onDragStart, onDrop}) => {
         }
       </div>
       
-      <div style={{display: (linkData.subtitles && dropdownOpen) ? 'flex' : 'none'}} className="menulink__subtitles" >
+      <div
+        className="menulink__subtitles" 
+        style={{display: (linkData.subtitles && dropdownOpen) ? 'flex' : 'none'}} 
+      >
         {options}
       </div>
     </div>

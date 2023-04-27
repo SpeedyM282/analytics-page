@@ -1,0 +1,43 @@
+@import '../../index.scss';
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.navbar__heading {
+  font-family: "MyriadPro-Regular", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.navbar__subheadings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__subheadings-items {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar__subheadings-items-item {
+  font-family: "MyriadPro-Semibold", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $text-info;
+
+  transition: .3s;
+}
+
+.navbar__subheadings-items-item:hover {
+  color: $text-dark;
+}
+
+// .navbar__subheadings-settingsIcon {
+//   border: 1px solid red;
+// }
