@@ -10,11 +10,16 @@
   gap: 7px;
 
   border: none;
-  border-radius: 5px;
+  border-radius: $border-radius-small;
   background: $btn-primary;
 
   font-family: 'MyriadPro-Regular', sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: $text-light;
+  
+  &:active {
+    box-shadow: $box-shadow-button;
+    transform: translateY(3px);
+  }
 }

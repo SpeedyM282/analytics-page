@@ -1,5 +1,5 @@
 import React from "react";
-import {TriangleIcon} from './TriangleIcon';
+import rightTriangle from '../../assets/icons/right-triangle.svg';
 import './style.scss';
 
 const Input = ({withLink, disabled}) => {
@@ -8,8 +8,8 @@ const Input = ({withLink, disabled}) => {
       <input className="input__block-input" disabled={disabled} /> 
       {
         withLink &&
-        <div className="triangleicon__block">
-          <TriangleIcon />
+        <div className="triangleicon__block pointer">
+          <img src={rightTriangle} alt="Not Found" />
         </div> 
       }
     </div>

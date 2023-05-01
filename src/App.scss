@@ -1,3 +1,5 @@
+@import './index.scss';
+
 .app {
   display: flex;
 }
@@ -5,4 +7,5 @@
 .app__main {
   padding: 25px;
   width: 100%;
+  background-color: $bg-light;
 }

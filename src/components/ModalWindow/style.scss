@@ -3,8 +3,12 @@
 .modal-window {
   position: absolute;
   top: 100px;
+  
   width: 179px;
-  border-radius: 5px;
+
+  background-color: $bg-white;
+
+  border-radius: $border-radius-small;
   box-shadow: $box-shadow-default;
 }
 
@@ -12,6 +16,11 @@
   padding: 7px 10px;
   display: flex;
   justify-content: space-between;
+  gap: 5px;
+
+  font-family: "MyriadPro-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 
   &:first-child {
     border-radius: 5px 5px 0 0;
@@ -24,8 +33,4 @@
   &:hover {
     background-color: $bg-modal-window;
   }
-}
-
-.modal-window__item-image {
-  // border: 1px solid red;
 }

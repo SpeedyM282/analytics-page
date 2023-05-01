@@ -29,9 +29,15 @@ $inputs-border: #CCCCCC;
 $columns-border: #979797;
 $sidebar-footer-border: #2C3D51;
 
-//BOX SHADOW 
+// BORDER RADIUSES
+$border-radius-small: 5px;
+$border-radius-large: 10px;
+
+//BOX SHADOWS
 $box-shadow-default: 0px 0px 3px,
   inset 0px 1px 2px rgba(255, 255, 255, 0.5);
+$box-shadow-box: 0px 5px 20px rgba(0,0,0,0.07);
+$box-shadow-button: inset 5px 5px 10px -3px #084590;
 
 * {
   margin: 0;
