@@ -41,6 +41,23 @@ export const MENU_LINKS_TEXT = [
     title: 'Адреса',
     order: 8
   },
+];
+
+export const SETTINGS_MODAL_WINDOW_DATA = [
+  {
+    text: 'Отображение столбцов',
+    icon: true
+  },
+  {
+    text: 'Порядок столбцов',
+    icon: true
+  },
+];
+
+export const ROW_OPTIONS_MODAL_WINDOW_DATA = [
+  {
+    text: 'Удалить'
+  }
 ]
 
 export const NAVBAR_DATA = {
