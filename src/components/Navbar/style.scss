@@ -38,6 +38,7 @@
   color: $text-dark;
 }
 
-// .navbar__subheadings-settingsIcon {
-//   border: 1px solid red;
-// }
+.navbar__subheadings-settings {
+  display: flex;
+  justify-content: flex-end;
+}
