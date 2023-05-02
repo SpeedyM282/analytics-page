@@ -9,10 +9,8 @@
   flex-direction: column;
   justify-content: space-between;
   
-  background: $bg-sidebar;
-  background-blend-mode: normal;
-
   color: $text-light;
+  background: $bg-sidebar;
 }
 
 .sidebar__upper {
@@ -39,8 +37,8 @@
 }
 
 .sidebar__footer {
-  width: 85%;
   padding: 10px 0;
+  width: 85%;
   
   display: flex;
   align-items: center;

@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import burger from '../../assets/icons/burger.svg';
 import upArrow from '../../assets/icons/up-arrow.svg';
 import downArrow from '../../assets/icons/down-arrow.svg';
-import { updateIdAction } from "../../store/reducer";
+import { updateIdAction } from "../../store/reducers/menuReducer";
 import './style.scss';
 
 const MenuLink = ({linkData, onDragEnd, onDragOver, onDragStart, onDrop}) => {
@@ -13,7 +13,7 @@ const MenuLink = ({linkData, onDragEnd, onDragOver, onDragStart, onDrop}) => {
   const [draggable, setDraggable] = useState(false)
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const linkId = useSelector(state => state.id);
+  const linkId = useSelector(state => state.menuReducer.id);
 
   const linkStyle = {
     color: '#FD8301',

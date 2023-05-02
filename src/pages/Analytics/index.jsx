@@ -9,6 +9,7 @@ const Analytics = () => {
     <div className="analytics">
       <Navbar navbarData={NAVBAR_DATA} />
       <Box isButton={true} />
+      <Box isTable={true} />
     </div>
   );
 }

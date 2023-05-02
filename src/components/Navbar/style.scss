@@ -21,6 +21,7 @@
 .navbar__subheadings-items {
   padding: 0;
   list-style: none;
+  
   display: flex;
   gap: 15px;
 }
@@ -32,10 +33,10 @@
   color: $text-info;
 
   transition: .3s;
-}
 
-.navbar__subheadings-items-item:hover {
-  color: $text-dark;
+  &:hover {
+    color: $text-dark;
+  }
 }
 
 .navbar__subheadings-settings {

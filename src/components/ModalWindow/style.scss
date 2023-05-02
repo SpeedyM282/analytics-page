@@ -8,12 +8,13 @@
 
   background-color: $bg-white;
 
-  border-radius: $border-radius-small;
   box-shadow: $box-shadow-default;
+  border-radius: $border-radius-small;
 }
 
 .modal-window__item {
   padding: 7px 10px;
+
   display: flex;
   justify-content: space-between;
   gap: 5px;
@@ -21,6 +22,7 @@
   font-family: "MyriadPro-Regular", sans-serif;
   font-size: 14px;
   font-weight: 400;
+  color: $text-dark;
 
   &:first-child {
     border-radius: 5px 5px 0 0;

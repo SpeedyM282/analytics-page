@@ -2,10 +2,10 @@ import React from "react";
 import rightTriangle from '../../assets/icons/right-triangle.svg';
 import './style.scss';
 
-const Input = ({withLink, disabled}) => {
+const Input = ({withLink, disabled, value}) => {
   return (
     <div className="input__block" >
-      <input className="input__block-input" disabled={disabled} /> 
+      <input className="input__block-input" value={value} disabled={disabled} /> 
       {
         withLink &&
         <div className="triangleicon__block pointer">

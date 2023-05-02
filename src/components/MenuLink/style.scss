@@ -9,10 +9,14 @@
   background-color: none;
   border: 1px solid transparent;
   user-select: none;
-}
 
-.menulink__link:hover {
-  background-color: $bg-sidebar-text-hover !important;
+  &:hover {
+    background-color: $bg-sidebar-text-hover !important;
+  }
+
+  &:hover .menulink__link-titleAndBurger-burger {
+    visibility: visible;
+  }
 }
 
 .menulink__link-titleAndBurger {
@@ -25,21 +29,15 @@
   visibility: hidden;
 }
 
-.menulink__link:hover .menulink__link-titleAndBurger-burger {
-  visibility: visible;
-}
-
-.menulink__link-titleAndBurger-title {
-  background-color: transparent;
-}
-
 .menulink__subtitles {
   padding: 14px 25px;
+
   display: flex;
   flex-direction: column;
   gap: 14px;
-  background-color: $bg-sidebar-dropdown;
+  
   color: $text-info-emphasis;
+  background-color: $bg-sidebar-dropdown;
 }
 
 .menulink__subtitles-option {
