@@ -4,7 +4,7 @@ const defaultState = {
   id: null,
 }
 
-export function reducer(state = defaultState, action) {
+export const menuReducer = (state = defaultState, action) => {
   switch (action.type) {
     case UPDATE_ID:
       return { ...state, id: action.payload };

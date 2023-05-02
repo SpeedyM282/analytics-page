@@ -43,6 +43,45 @@ export const MENU_LINKS_TEXT = [
   },
 ];
 
+export const PRODUCTS_DATA = [
+  {
+    id: 1,
+    order: 1,
+    productPrice: 1231,
+    productQuantity: 12,
+    productTotal: 14772,
+    productName: 'Мраморный щебень',
+    unitName: 'Мраморный щебень фр. 2-5 мм, 25кг',
+  },
+  {
+    id: 2,
+    order: 2,
+    productPrice: 1231,
+    productQuantity: 12,
+    productTotal: 14772,
+    productName: 'Мраморный щебень',
+    unitName: 'Мраморный щебень фр. 2-5 мм, 25кг',
+  },
+  {
+    id: 3,
+    order: 3,
+    productPrice: 1231,
+    productQuantity: 12,
+    productTotal: 14772,
+    productName: 'Мраморный щебень',
+    unitName: 'Мраморный щебень фр. 2-5 мм, 25кг',
+  },
+  {
+    id: 4,
+    order: 4,
+    productPrice: 1231,
+    productQuantity: 12,
+    productTotal: 14772,
+    productName: 'Мраморный щебень',
+    unitName: 'Мраморный щебень фр. 2-5 мм, 25кг',
+  },
+];
+
 export const SETTINGS_MODAL_WINDOW_DATA = [
   {
     text: 'Отображение столбцов',
