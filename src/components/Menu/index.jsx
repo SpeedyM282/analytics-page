@@ -1,15 +1,13 @@
 import React, {useState} from "react";
-import MenuLink from '../MenuLink';
+import MenuLink from './MenuLink';
 import { MENU_LINKS_TEXT } from "../../data";
-
 import './style.scss';
 
 const Menu = () => {
   const [links, setLinks] = useState(MENU_LINKS_TEXT);
   const [currentLink, setCurrentLink] = useState(null);
 
-  const dragStartHandler = (e, link) => {
-    // e.preventDefault();
+  const dragStartHandler = (link) => {
     setCurrentLink(link);
   }
 

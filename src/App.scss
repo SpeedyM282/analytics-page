@@ -2,9 +2,11 @@
 
 .app {
   display: flex;
+  overflow: hidden;
 }
 
 .app__main {
+  overflow: auto;
   padding: 25px;
   width: 100%;
   background-color: $bg-light;

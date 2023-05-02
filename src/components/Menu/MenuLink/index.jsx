@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from 'react-redux';
-import burger from '../../assets/icons/burger.svg';
-import upArrow from '../../assets/icons/up-arrow.svg';
-import downArrow from '../../assets/icons/down-arrow.svg';
-import { updateIdAction } from "../../store/reducers/menuReducer";
+import burger from '../../../assets/icons/burger.svg';
+import upArrow from '../../../assets/icons/up-arrow.svg';
+import downArrow from '../../../assets/icons/down-arrow.svg';
+import { updateIdAction } from "../../../store/reducers/menuReducer";
 import './style.scss';
 
 const MenuLink = ({linkData, onDragEnd, onDragOver, onDragStart, onDrop}) => {
@@ -43,7 +43,7 @@ const MenuLink = ({linkData, onDragEnd, onDragOver, onDragStart, onDrop}) => {
       onDragLeave={e => onDragEnd(e)}
       onDragOver={e => onDragOver(e)}
       onDrop={e => onDrop(e, linkData)}
-      onDragStart={e => onDragStart(e, linkData)}
+      onDragStart={() => onDragStart(linkData)}
     >
       <div style={linkId === linkData.id ? linkStyle : {}} className="menulink__link" >
         <div className="menulink__link-titleAndBurger">
