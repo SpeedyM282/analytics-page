@@ -1,0 +1,75 @@
+.react-resizable {
+  position: relative;
+  background-clip: padding-box;
+}
+
+.react-resizable-handle {
+  position: absolute;
+  right: -5px;
+  bottom: 0;
+  z-index: 1;
+  width: 10px;
+  height: 100%;
+  cursor: col-resize;
+}
+
+
+/* table {
+  width: 100%;
+  display: grid;
+  overflow: auto;
+  grid-template-columns:
+    minmax(50px, 0.5fr)
+    minmax(50px, 0.1fr)
+    minmax(50px, 0.5fr)
+    minmax(50px, 0.5fr)
+    minmax(50px, 0.5fr);
+}
+
+table thead,
+table tbody,
+table tr {
+  display: contents;
+}
+
+table th {
+  position: relative;
+  font-size: 18px;
+}
+
+table th,
+table td {
+  text-align: center;
+  padding: 15px;
+}
+
+table th span,
+table td span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+}
+
+table thead tr th {
+  border-bottom: 1px solid #ccc;
+}
+
+.resize-handle {
+  display: block;
+  position: absolute;
+  cursor: col-resize;
+  width: 7px;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  border-right: 2px solid #EEEFF1;
+}
+
+.resize-handle:hover {
+  border-color: #ccc;
+}
+
+.resize-handle.active {
+  border-color: #517ea5;
+} */

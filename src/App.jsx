@@ -1,6 +1,6 @@
 import React from "react";
-import Sidebar from './components/Sidebar';
 import Analytics from './pages/Analytics';
+import Sidebar from './components/Sidebar';import 'antd/dist/reset.css';
 import './App.scss';
 
 const App = () => {

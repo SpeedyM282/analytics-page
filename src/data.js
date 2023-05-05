@@ -47,39 +47,49 @@ export const PRODUCTS_DATA = [
   {
     id: 1,
     order: 1,
+    unitName: 'Мраморный щебень фр. 2-5 мм, 25кг',
     productPrice: 1231,
     productQuantity: 12,
-    productTotal: 14772,
     productName: 'Мраморный щебень',
-    unitName: 'Мраморный щебень фр. 2-5 мм, 25кг',
+    productTotal: 14772,
   },
   {
     id: 2,
     order: 2,
+    unitName: 'Мраморный щебень фр. 2-5 мм, 25кг',
     productPrice: 1231,
     productQuantity: 12,
-    productTotal: 14772,
     productName: 'Мраморный щебень',
-    unitName: 'Мраморный щебень фр. 2-5 мм, 25кг',
+    productTotal: 14772,
   },
   {
     id: 3,
     order: 3,
+    unitName: 'Мраморный щебень фр. 2-5 мм, 25кг',
     productPrice: 1231,
     productQuantity: 12,
-    productTotal: 14772,
     productName: 'Мраморный щебень',
-    unitName: 'Мраморный щебень фр. 2-5 мм, 25кг',
+    productTotal: 14772,
   },
   {
     id: 4,
     order: 4,
+    unitName: 'Мраморный щебень фр. 2-5 мм, 25кг',
     productPrice: 1231,
     productQuantity: 12,
-    productTotal: 14772,
     productName: 'Мраморный щебень',
-    unitName: 'Мраморный щебень фр. 2-5 мм, 25кг',
+    productTotal: 14772,
   },
+];
+
+export const TABLE_HEADERS = [
+    "№",
+    ' ',
+    "Наименование еденицы",
+    "Цена",
+    "Кол-во",
+    "Название товара",
+    "Итого"
 ];
 
 export const SETTINGS_MODAL_WINDOW_DATA = [

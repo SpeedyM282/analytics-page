@@ -9,13 +9,12 @@
 
 .input__block-input {
   padding: 8px 15px;
-
-  width: 300px;
   height: 100%;
   
   font-family: 'MyriadPro-Regular', sans-serif;
   font-size: 16px;
   font-weight: 400;
+  line-height: 22px;
 
   border-radius: $border-radius-small;
   border: 1px solid $inputs-border;
